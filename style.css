@@ -1,0 +1,363 @@
+:root{
+    font-family: 'Familjen Grotesk','Abril Fatface','sans-serif';
+    font-size: 20px;
+    color: rgb(57, 56, 56);
+}
+
+
+body {
+    font-family: 'Familjen Grotesk','Abril Fatface','sans-serif';
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-image: url(image/water\ paint.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    background-color: rgb(95, 142, 128);
+    align-items: center;
+    color: white;
+    width: 100%;
+    position: sticky;
+    justify-content: space-between;
+    top:0; 
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+
+}
+
+
+.navbar {
+    background-color:  rgb(95, 142, 128);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+   
+  
+}
+.nav-list ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+    
+.nav-list ul li {
+    list-style: none;
+    font-family:"Tapestry", serif;
+    font-size:30px; 
+    flex: auto;
+   
+}
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    transition: color 0.3s ease;
+
+}
+
+.nav-list a:hover{
+    color: rgb(69, 22, 113);
+
+}
+
+.nav-list a :active{
+    color: rgb(69, 22, 113);
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+    width:80%;
+    height: 80%;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    
+}
+
+
+.grid-item {
+    background-color: #f4f4f4;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px solid rgb(130, 124, 124);
+    position: relative;
+    transition: transform 0.3s ease;
+    
+  
+}
+
+.grid-item::before{
+    content: "";
+    width: 90%;
+    height: 13%;
+    position: absolute;
+    background: linear-gradient(rgba(165, 1, 1, 0),rgba(42, 177, 130, 0.5)); 
+    border-radius: 100%;
+}
+
+.grid-item::after{
+    content:"";
+    width: 90%;
+    height: 13%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 5px solid rgba(34, 119, 112, 0.321);
+    border-radius: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+
+}
+
+
+.grid-item a {
+    color: rgb(95, 142, 128);
+    text-decoration: none;
+}
+
+.grid-item a:hover{
+    color:rgb(69, 22, 113) ;
+   
+}
+
+.grid-item:hover {
+    transform: translate(20px,20px) rotate(0deg)
+    scale(1.05) skew(0deg,0deg);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    font-size: 30px;
+    font-style: normal;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.flex-item {
+    background-color: rgb(95, 142, 128);
+    color: white;
+    line-height: 100px;
+    width: 170px;
+    height: 100px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    
+    
+}
+
+.flex-item a {
+    color: white;
+    text-decoration: none;
+    
+  
+   
+}
+
+.flex-item a:hover{
+    color:rgb(69, 22, 113);
+    
+}
+
+.flex-item:first-of-type:hover{
+    background-color: rgb(146, 203, 166);
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 200;
+    
+    
+    
+}
+
+.flex-item:nth-last-of-type(2):hover{
+    background-color:rgb(146, 203, 166);
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-weight: 200;
+
+}
+
+.flex-item:last-of-type:hover{
+    background-color:rgb(146, 203, 166);
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.grid-item-contact{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    font-size: 20px;
+    padding: 20px;
+    flex-direction: column;
+    
+}
+
+/* header */
+
+h1{
+    font-family: "Tapestry", serif;
+    font-weight: 400;
+    
+    font-size: 30px;
+    font-weight: 900;
+    margin: 1%;
+    justify-self: flex-start;
+    text-align: center;
+}
+
+h2{
+    font-family:"Abril Fatface",'sans-serif'; 
+    font-size: 40px;
+    font-weight: 400;
+    color:  rgb(95, 142, 128);
+    font-style: normal;
+    margin: 1%;
+    justify-self: flex-start;
+    text-align: center;
+}
+
+form{
+    font-size: 20px;
+    padding: 5%;
+    margin: 20%;
+   
+    
+}
+
+footer {
+    text-align: center;
+    position: sticky;
+    padding: 10px;
+    background-color:rgb(95, 142, 128);
+    color: white;
+    opacity:70%;
+  
+}
+
+input[type="text"]:focus {
+    border: 2px solid #5e918f;
+    outline: none;
+}
+
+
+input[type="email"]:focus {
+    border: 2px solid #5e918f;
+    outline: none;
+}
+
+
+/* ipad */
+ @media (max-width:768px){
+    :root{
+        font-size: 5px
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        
+    }
+    nav{
+        width: 100%;
+        padding: 0% 0;
+    }
+    nav ul {
+        
+        align-items: center;
+        padding: 0%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+    }
+
+    .grid-item {
+       
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    .grid-item > h2 {
+        font-size: 20px;
+        display: flex;
+        
+       
+
+    }
+    .grid-item-about > p{
+        font-size: 5px;
+        margin: 1% 10%;
+    }
+
+    .flex-container{
+        display: flex;
+        font-size: 11px;
+        margin: 1% 10%;
+        width: 20px;
+        height: 80px;
+        line-height: 100px;
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .flex-item {
+        width: 10px;
+        height: 80px;
+       
+    }
+
+    .grid-item-contact{
+        display: flex;
+        font-size: calc(var(fontsize)*0.8);
+        margin: 1% 10%;
+        flex-direction: column;
+        width: 20px;
+        height: 80px;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+}
